@@ -1,0 +1,6 @@
+framework module Pods_TouchPresenter_Example {
+  umbrella header "Pods-TouchPresenter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

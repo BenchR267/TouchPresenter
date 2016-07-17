@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'TouchPresenter_Example' do
+
+    pod 'TouchPresenter', :path => '../'
+
+end

@@ -1,0 +1,6 @@
+framework module TouchPresenter {
+  umbrella header "TouchPresenter-umbrella.h"
+
+  export *
+  module * { export * }
+}

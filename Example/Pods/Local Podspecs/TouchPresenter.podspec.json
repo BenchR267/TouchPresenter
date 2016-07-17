@@ -1,0 +1,23 @@
+{
+  "name": "TouchPresenter",
+  "version": "0.0.1",
+  "summary": "A short description of TouchPresenter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/BenchR267/TouchPresenter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Benjamin Herzog": "mail@benchr.de"
+  },
+  "source": {
+    "git": "https://github.com/BenchR267/TouchPresenter.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TouchPresenter/**/*",
+  "frameworks": "UIKit"
+}
