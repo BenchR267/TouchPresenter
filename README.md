@@ -5,9 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 [![Platform](https://img.shields.io/cocoapods/p/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 
+## What does it do?
+This framework provides an UIWindow subclass that highlights every touch. It can be used to create better video presentations of your app.
+
+The idea of this project is heavily inspired by https://github.com/eumlab/EUMTouchPointView
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and open the workspace in the Example directory.
+
+<center>
+![](pic/1.gif)
+![](pic/2.gif)
+</center>
 
 ## Requirements
 
@@ -17,8 +27,40 @@ TouchPresenter is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "TouchPresenter"
+pod 'TouchPresenter', :git => 'https://github.com/BenchR267/TouchPresenter'
 ```
+
+In the project, you need to import the framework:
+```Swift
+import TouchPresenter
+```
+
+To use the window, just override the getter of the window property in your AppDelegate.swift: (the size property of the initializer is optional, default is 50x50 points)
+
+```Swift
+private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self, size: CGSize(width: 40, height: 40))
+
+var window: UIWindow? {
+    get {
+        return customWindow
+    }
+    set { }
+}
+```
+
+If you are already using a custom window be sure to make it a subclass of TPWindow:
+
+```Swift
+class MyCustomWindow: TPWindow { ... }
+```
+
+It is also possible to use different indicators, there are two kinds provided currently by the framework which is TPRedIndicator and TPCircleIndicator. If you want to use a custom one, just return the type of your custom view, the only requirement is, that it inherits from UIView.
+
+## Features
+
+- [x] all touches are highlighted (even multiple ones)
+- [x] simple indicators are provided
+- [ ] possibility to turn the functionality off temporary
 
 ## Author
 

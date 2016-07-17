@@ -1,10 +1,15 @@
 Pod::Spec.new do |s|
   s.name             = 'TouchPresenter'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of TouchPresenter.'
+  s.version          = '1.0.0'
+  s.summary          = 'TouchPresenter is a small helper to hightlight touches.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+If you want to create a rich video presentation of you app,
+you need some kind of visualization for the touches since
+they are not visible in screen recordings.
+This library offers the possibility to highlight every
+touch on the screen.
+You are also able to create own custom indicators.
                        DESC
 
   s.homepage         = 'https://github.com/BenchR267/TouchPresenter'

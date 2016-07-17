@@ -12,18 +12,14 @@ import TouchPresenter
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self)
+    private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPCircleIndicator.self)
     
     var window: UIWindow? {
-        get {
-            return customWindow
-        }
+        get { return customWindow }
         set { }
     }
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
         return true
     }
 
