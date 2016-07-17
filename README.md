@@ -27,7 +27,7 @@ TouchPresenter is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'TouchPresenter', :git => 'https://github.com/BenchR267/TouchPresenter'
+pod 'TouchPresenter'
 ```
 
 In the project, you need to import the framework:
