@@ -61,6 +61,8 @@ It is also possible to use different indicators, there are two kinds provided cu
 - [x] all touches are highlighted (even multiple ones)
 - [x] simple indicators are provided
 - [ ] possibility to turn the functionality off temporary
+- [ ] add unit tests
+- [ ] add travisCI
 
 ## Author
 
