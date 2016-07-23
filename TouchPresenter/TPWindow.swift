@@ -23,41 +23,63 @@ internal extension UITouch {
     }
 }
 
+public struct TouchPresenterConfiguration<ViewType: UIView> {
+    
+    /// Size of the view
+    let size: CGSize
+    
+    /// true if 3d touch should be visualized
+    let threeDeeTouchEnabled: Bool
+    
+    /**
+     Initialize a configuration instance.
+     
+     - parameter viewType:          the type of the view that should be used
+     - parameter size:              the size of the view
+     - parameter forceTouchEnabled: use forcetouch
+     
+     *NOTE* size is default at 50x50 points
+     
+     *NOTE* forceTouchEnabled is only available on iOS 9 or greater on appropriate devices
+     */
+    @available(iOS 9.0, *)
+    public init(viewType: ViewType.Type, size: CGSize = CGSize(width: 50, height: 50), enable3DTouch: Bool = false) {
+        self.size = size
+        self.threeDeeTouchEnabled = enable3DTouch
+    }
+
+}
+
 /**
  Use this window subclass as your main window, it will catch all touches and highlight them with the given view class.
  
  Initialize in the following way:
  
  ```Swift
- TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self, size: CGSize(width: 50, height: 50))
+ TPWindow(frame: UIScreen.mainScreen().bounds, configuration: TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self))
  ```
  
- The size parameter has a default value of 50x50 points.
- 
- You can just override your window getter in AppDelegate like the following:
+ You can just override your init method in AppDelegate like the following:
  
  ```
- private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self)
- 
- var window: UIWindow? {
-     get {
-        return customWindow
-     }
-    set { }
+ override init() {
+ let config = TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self, enable3DTouch: true)
+ window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+ super.init()
  }
  ```
  
  You can set any subclass of UIView as the viewType. The window will then initialize an instance of it in the given size.
  */
-public class TPWindow<T: UIView>: UIWindow {
+public class TPWindow<ViewType: UIView>: UIWindow {
     
-    private let size: CGSize
+    private let configuration: TouchPresenterConfiguration<ViewType>
     
     /**
      Initializes an instance of the window. See class documentation for more details.
      */
-    public init(frame: CGRect, viewType: T.Type, size: CGSize = CGSize(width: 50, height: 50)) {
-        self.size = size
+    public init(frame: CGRect, configuration: TouchPresenterConfiguration<ViewType>) {
+        self.configuration = configuration
         super.init(frame: frame)
     }
     
@@ -71,19 +93,31 @@ public class TPWindow<T: UIView>: UIWindow {
                 
             case .Began:
                 let touchPosition = touch.locationInView(self)
-                let origin = CGPoint(x: touchPosition.x - size.width/2, y: touchPosition.y - size.height/2)
-                let frame = CGRect(origin: origin, size: size)
-                let indicator = T(frame: frame)
+                let origin = CGPoint(x: touchPosition.x - configuration.size.width/2, y: touchPosition.y - configuration.size.height/2)
+                let frame = CGRect(origin: origin, size: configuration.size)
+                let indicator = ViewType(frame: frame)
                 touch.indicator = indicator
                 addSubview(indicator)
                 
-            case .Moved, .Stationary:
+            case .Stationary:
+                break
+                
+            case .Moved:
                 touch.indicator?.center = touch.locationInView(self)
                 
             case .Ended, .Cancelled:
                 touch.indicator?.removeFromSuperview()
                 touch.indicator = nil
             }
+            
+            if configuration.threeDeeTouchEnabled {
+                if #available(iOS 9.0, *) {
+                    
+                    let calculatedForce = max(1, sqrt(touch.force))
+                    touch.indicator?.transform = CGAffineTransformMakeScale(calculatedForce, calculatedForce)
+                }
+            }
+            
         }
     }
     

@@ -35,31 +35,31 @@ In the project, you need to import the framework:
 import TouchPresenter
 ```
 
-To use the window, just override the getter of the window property in your AppDelegate.swift: (the size property of the initializer is optional, default is 50x50 points)
+To use the window, just override the init method in your AppDelegate.swift and configure it like you want:
 
 ```Swift
 private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self, size: CGSize(width: 40, height: 40))
 
-var window: UIWindow? {
-    get {
-        return customWindow
+override init() {
+        let config = TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self, enable3DTouch: true)
+        window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+        super.init()
     }
-    set { }
-}
 ```
 
-If you are already using a custom window be sure to make it a subclass of TPWindow:
+If you are already using a custom window be sure to make it a subclass of TPWindow and call it's initializer as super in your initializer:
 
 ```Swift
 class MyCustomWindow: TPWindow { ... }
 ```
 
-It is also possible to use different indicators, there are two kinds provided currently by the framework which is TPRedIndicator and TPCircleIndicator. If you want to use a custom one, just return the type of your custom view, the only requirement is, that it inherits from UIView.
+It is also possible to use different indicators, there are three kinds provided currently by the framework which is TPLightBlueCircleIndicator, TPRedIndicator and TPCircleIndicator. If you want to use a custom one, just return the type of your custom view, the only requirement is, that it inherits from UIView. (See example project for an example of this)
 
 ## Features
 
 - [x] all touches are highlighted (even multiple ones)
 - [x] simple indicators are provided
+- [x] Enable 3D touch visualization
 - [ ] possibility to turn the functionality off temporary
 - [ ] add unit tests
 - [ ] add travisCI

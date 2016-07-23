@@ -9,14 +9,26 @@
 import UIKit
 import TouchPresenter
 
+class Image: UIImageView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        image = UIImage(named: "oval")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPCircleIndicator.self)
+    var window: UIWindow?
     
-    var window: UIWindow? {
-        get { return customWindow }
-        set { }
+    override init() {
+        let config = TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self, enable3DTouch: true)
+        window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+        super.init()
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

@@ -44,3 +44,17 @@ public class TPCircleIndicator: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+public class TPLightBlueCircleIndicator: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = UIColor(red: 0, green: 151.0/255, blue: 216.0/255, alpha: 0.3)
+        
+        let size = min(frame.size.width, frame.size.height)
+        layer.cornerRadius = size / 2
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
