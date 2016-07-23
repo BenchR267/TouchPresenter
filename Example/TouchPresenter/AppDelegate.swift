@@ -30,9 +30,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = TPWindow(frame: UIScreen.main().bounds, configuration: config)
         super.init()
     }
-
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//        return true
-//    }
-
 }
