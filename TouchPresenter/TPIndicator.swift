@@ -14,7 +14,7 @@ public class TPRedIndicator: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .redColor()
+        backgroundColor = .red()
         
         let size = min(frame.size.width, frame.size.height)
         layer.cornerRadius = size / 2
@@ -31,13 +31,13 @@ public class TPCircleIndicator: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .clearColor()
+        backgroundColor = .clear()
         
         let size = min(frame.size.width, frame.size.height)
         layer.cornerRadius = size / 2
         
         layer.borderWidth = 3
-        layer.borderColor = UIColor.darkGrayColor().CGColor
+        layer.borderColor = UIColor.darkGray().cgColor
     }
     
     required public init?(coder aDecoder: NSCoder) {

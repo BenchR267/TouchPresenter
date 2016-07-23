@@ -27,12 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     override init() {
         let config = TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self, enable3DTouch: true)
-        window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+        window = TPWindow(frame: UIScreen.main().bounds, configuration: config)
         super.init()
     }
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        return true
-    }
-
 }

@@ -14,24 +14,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         let t = UITableView(frame: view.bounds)
-        t.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        t.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         t.dataSource = self
         t.delegate = self
         
-        t.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        t.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         view.addSubview(t)
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
         
         cell.textLabel?.text = "\(indexPath.row)"
         
         return cell
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1000
     }
     

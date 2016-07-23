@@ -82,8 +82,12 @@ public class TPWindow<ViewType: UIView>: UIWindow {
         self.configuration = configuration
         super.init(frame: frame)
     }
-    
-    public override func sendEvent(event: UIEvent) {
+
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    public override func sendEvent(_ event: UIEvent) {
         super.sendEvent(event)
         
         event.allTouches()?.forEach {
@@ -91,21 +95,21 @@ public class TPWindow<ViewType: UIView>: UIWindow {
             
             switch touch.phase {
                 
-            case .Began:
-                let touchPosition = touch.locationInView(self)
+            case .began:
+                let touchPosition = touch.location(in: self)
                 let origin = CGPoint(x: touchPosition.x - configuration.size.width/2, y: touchPosition.y - configuration.size.height/2)
                 let frame = CGRect(origin: origin, size: configuration.size)
                 let indicator = ViewType(frame: frame)
                 touch.indicator = indicator
                 addSubview(indicator)
                 
-            case .Stationary:
+            case .stationary:
                 break
                 
-            case .Moved:
-                touch.indicator?.center = touch.locationInView(self)
+            case .moved:
+                touch.indicator?.center = touch.location(in: self)
                 
-            case .Ended, .Cancelled:
+            case .ended, .cancelled:
                 touch.indicator?.removeFromSuperview()
                 touch.indicator = nil
             }
@@ -114,7 +118,7 @@ public class TPWindow<ViewType: UIView>: UIWindow {
                 if #available(iOS 9.0, *) {
                     
                     let calculatedForce = max(1, sqrt(touch.force))
-                    touch.indicator?.transform = CGAffineTransformMakeScale(calculatedForce, calculatedForce)
+                    touch.indicator?.transform = CGAffineTransform(scaleX: calculatedForce, y: calculatedForce)
                 }
             }
             
