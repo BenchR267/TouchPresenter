@@ -82,6 +82,7 @@ public class TPWindow<T: UIView>: UIWindow {
                 
             case .Ended, .Cancelled:
                 touch.indicator?.removeFromSuperview()
+                touch.indicator = nil
             }
         }
     }
