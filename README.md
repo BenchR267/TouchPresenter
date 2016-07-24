@@ -59,6 +59,7 @@ It is also possible to use different indicators, there are three kinds provided 
 - [x] simple indicators are provided
 - [x] Enable 3D touch visualization
 - [ ] possibility to turn the functionality off temporary
+- [ ] add configuration parameter/closure for view
 - [ ] add unit tests
 - [ ] add travisCI
 
