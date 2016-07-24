@@ -38,8 +38,6 @@ import TouchPresenter
 To use the window, just override the init method in your AppDelegate.swift and configure it like you want:
 
 ```Swift
-private var customWindow = TPWindow(frame: UIScreen.mainScreen().bounds, viewType: TPRedIndicator.self, size: CGSize(width: 40, height: 40))
-
 override init() {
         let config = TouchPresenterConfiguration(viewType: TPLightBlueCircleIndicator.self, enable3DTouch: true)
         window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
