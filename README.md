@@ -30,6 +30,13 @@ it, simply add the following line to your Podfile:
 pod 'TouchPresenter'
 ```
 
+TouchPresenter is also available via Carthage. Just add this line to your Cartfile (more information [here](https://github.com/Carthage/Carthage)):
+```
+github "BenchR267/TouchPresenter" == 2.0.1
+```
+
+## Usage
+
 In the project, you need to import the framework:
 ```Swift
 import TouchPresenter
