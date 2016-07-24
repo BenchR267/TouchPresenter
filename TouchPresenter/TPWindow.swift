@@ -30,6 +30,10 @@ public struct TouchPresenterConfiguration<ViewType: UIView> {
 
     /// true if 3d touch should be visualized
     let threeDeeTouchEnabled: Bool
+    
+    public typealias ViewConfiguration = (view: ViewType) -> Void
+    
+    private(set) var viewConfiguration: ViewConfiguration?
 
     /**
      Initialize a configuration instance.
@@ -37,14 +41,18 @@ public struct TouchPresenterConfiguration<ViewType: UIView> {
      - parameter viewType:          the type of the view that should be used
      - parameter size:              the size of the view
      - parameter forceTouchEnabled: use forcetouch
+     - parameter viewConfiguration: the configuration block for the view to use (called on init(frame:_))
 
-     *NOTE* size is default at 50x50 points
+     **NOTE** size is default at 50x50 points
 
-     *NOTE* forceTouchEnabled is only available on iOS 9 or greater on appropriate devices
+     **NOTE** forceTouchEnabled is only available on iOS 9 or greater on appropriate devices
+     
+     **NOTE** viewConfiguration is being retained in the configuration object, so use weak self if you need self inside!
      */
-    public init(viewType: ViewType.Type, size: CGSize = CGSize(width: 50, height: 50), enable3DTouch: Bool = false) {
+    public init(viewType: ViewType.Type, size: CGSize = CGSize(width: 50, height: 50), enable3DTouch: Bool = false, viewConfiguration: ViewConfiguration? = nil) {
         self.size = size
         self.threeDeeTouchEnabled = enable3DTouch
+        self.viewConfiguration = viewConfiguration
     }
 
 }
@@ -95,6 +103,7 @@ public class TPWindow<ViewType: UIView>: UIWindow {
                 let origin = CGPoint(x: touchPosition.x - configuration.size.width/2, y: touchPosition.y - configuration.size.height/2)
                 let frame = CGRect(origin: origin, size: configuration.size)
                 let indicator = ViewType(frame: frame)
+                configuration.viewConfiguration?(view: indicator)
                 touch.indicator = indicator
                 addSubview(indicator)
 

@@ -32,7 +32,7 @@ pod 'TouchPresenter'
 
 TouchPresenter is also available via Carthage. Just add this line to your Cartfile (more information [here](https://github.com/Carthage/Carthage)):
 ```
-github "BenchR267/TouchPresenter" == 2.0.1
+github "BenchR267/TouchPresenter" == 2.1.0
 ```
 
 ## Usage
@@ -60,13 +60,22 @@ class MyCustomWindow: TPWindow { ... }
 
 It is also possible to use different indicators, there are three kinds provided currently by the framework which is TPLightBlueCircleIndicator, TPRedIndicator and TPCircleIndicator. If you want to use a custom one, just return the type of your custom view, the only requirement is, that it inherits from UIView. (See example project for an example of this)
 
+You can also specify a configuration block in the configuration object. That will be called after initialising the view, so you could just use a plain UIImageView like in the example project:
+
+```Swift
+let config = TouchPresenterConfiguration(viewType: UIImageView.self, enable3DTouch: true) {
+    $0.image = UIImage(named: "oval")
+}
+window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+```
+
 ## Features
 
 - [x] all touches are highlighted (even multiple ones)
 - [x] simple indicators are provided
 - [x] Enable 3D touch visualization
 - [ ] possibility to turn the functionality off temporary
-- [ ] add configuration parameter/closure for view
+- [x] add configuration parameter/closure for view
 - [ ] add unit tests
 - [ ] add travisCI
 
