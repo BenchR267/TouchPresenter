@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TouchPresenter'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'TouchPresenter is a small helper to hightlight touches.'
 
   s.description      = <<-DESC
