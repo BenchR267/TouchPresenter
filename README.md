@@ -1,6 +1,7 @@
 # TouchPresenter
 
 [![CI Status](http://img.shields.io/travis/Benjamin Herzog/TouchPresenter.svg?style=flat)](https://travis-ci.org/Benjamin Herzog/TouchPresenter)
+[![Swift Version](https://img.shields.io/badge/Swift-3.0.1-orange.svg)]()
 [![Version](https://img.shields.io/cocoapods/v/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 [![License](https://img.shields.io/cocoapods/l/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 [![Platform](https://img.shields.io/cocoapods/p/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
