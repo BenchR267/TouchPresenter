@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12F396D2BA22D64F94101CD4DE644A1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		181E47AD659C392784073203390C516C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		3E725EB0ED7D17B15729A5DADF8E47DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		53B38994CD16BD043EAF96DAEB6300AA /* TouchPresenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16EBFD16AC625B0933FA27B3ABD9B92 /* TouchPresenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		567154C516B6AD2F4479D840DDBF9339 /* Pods-TouchPresenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B1E6E56520C39CC0CCA6D28BAE5837 /* Pods-TouchPresenter_Example-dummy.m */; };
-		7A9EF95F2018AEE605D1A6EE6CDB8B86 /* TPWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D3B2DE617809F471885BE4E4278BA2 /* TPWindow.swift */; };
-		82E6DA66A7E01B217201441E8E42B78E /* TPIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561EF86BDDC78A64709348C8D311F0A /* TPIndicator.swift */; };
-		CF035AB2A22564FF9B6058009D7B0989 /* Pods-TouchPresenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DABEC1C9CAB827A97DC3EFB2CC59E478 /* Pods-TouchPresenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6D9EC401D2F302A9B53838B268E97F9 /* TouchPresenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE437C590C790A0A5F033D55A13A21A /* TouchPresenter-dummy.m */; };
+		3C078A82E33D0A6EE9D94017C44BB730 /* TouchPresenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE437C590C790A0A5F033D55A13A21A /* TouchPresenter-dummy.m */; };
+		4174F09E10570C48390565CAB0B8823B /* TouchPresenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F16EBFD16AC625B0933FA27B3ABD9B92 /* TouchPresenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		612F58018EDC32238227B56212C90214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		8E24433EA55D29F27D331E2289165F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		92428DB92987796E6BE4C7D154F52195 /* Pods-TouchPresenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DABEC1C9CAB827A97DC3EFB2CC59E478 /* Pods-TouchPresenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B1DCC21C9026B9010B57E55596A44B /* TPIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561EF86BDDC78A64709348C8D311F0A /* TPIndicator.swift */; };
+		AF933A2327170D4C33CBC9D04E72E04F /* TPWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D3B2DE617809F471885BE4E4278BA2 /* TPWindow.swift */; };
+		C1582BA5B2286355DA08B7AD2A7B0589 /* Pods-TouchPresenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B1E6E56520C39CC0CCA6D28BAE5837 /* Pods-TouchPresenter_Example-dummy.m */; };
+		FEBB75B4764F6D78395B82856444799D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7C6AD052D14A0ECB3BA973A79B8F5FFC /* PBXContainerItemProxy */ = {
+		1334D615E07B26A602B7BE0E6CCBEE97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CDAB23B82BC0D9943E6B79D58535278;
+			remoteGlobalIDString = DADC98F6D23AA9D57487B025C14128C0;
 			remoteInfo = TouchPresenter;
 		};
 /* End PBXContainerItemProxy section */
@@ -41,34 +41,34 @@
 		4561EF86BDDC78A64709348C8D311F0A /* TPIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TPIndicator.swift; sourceTree = "<group>"; };
 		5242245D25BD841D9D1ABDDD938E8FA2 /* TouchPresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchPresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E79DD4EC3D5A3C29B75C081500CE9F1 /* TouchPresenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TouchPresenter.modulemap; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73D3B2DE617809F471885BE4E4278BA2 /* TPWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TPWindow.swift; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8EE437C590C790A0A5F033D55A13A21A /* TouchPresenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TouchPresenter-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E31969BAF5B0D0430E16F59684DD8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A6DCD6B7ED413E0884F7541C0911ACBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5987BC049A2560913ED865FDBCC1364 /* Pods-TouchPresenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TouchPresenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DABEC1C9CAB827A97DC3EFB2CC59E478 /* Pods-TouchPresenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TouchPresenter_Example-umbrella.h"; sourceTree = "<group>"; };
-		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EC4C08C77BDE43BE7D1CD26D23B4FE7F /* Pods-TouchPresenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchPresenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F16EBFD16AC625B0933FA27B3ABD9B92 /* TouchPresenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TouchPresenter-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A4A06F4D5D00B932399FE0C586151CCE /* Frameworks */ = {
+		9E8C8BF8B88099579ABD89ABD22CDEA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E725EB0ED7D17B15729A5DADF8E47DB /* Foundation.framework in Frameworks */,
+				FEBB75B4764F6D78395B82856444799D /* Foundation.framework in Frameworks */,
+				612F58018EDC32238227B56212C90214 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9FEBAAC85326BF4D728E22E9968D04D /* Frameworks */ = {
+		FE13AACFF2DD3500F046938D8B27BE95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F396D2BA22D64F94101CD4DE644A1D /* Foundation.framework in Frameworks */,
-				181E47AD659C392784073203390C516C /* UIKit.framework in Frameworks */,
+				8E24433EA55D29F27D331E2289165F90 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,11 +161,11 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
-				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -182,50 +182,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		69945E989B6A8757AB5D4F4090A7D000 /* Headers */ = {
+		9181D4E89C1E56F8947ADB052F7F00EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B38994CD16BD043EAF96DAEB6300AA /* TouchPresenter-umbrella.h in Headers */,
+				92428DB92987796E6BE4C7D154F52195 /* Pods-TouchPresenter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F147F036C74960AE4146DB5EA600B1EC /* Headers */ = {
+		B42E4B4729A16A76679D03EA43ACDF89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF035AB2A22564FF9B6058009D7B0989 /* Pods-TouchPresenter_Example-umbrella.h in Headers */,
+				4174F09E10570C48390565CAB0B8823B /* TouchPresenter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5E846C615B0EAC971732559C3A93F518 /* Pods-TouchPresenter_Example */ = {
+		16D1852A2AE05D65C135A6F845051CA0 /* Pods-TouchPresenter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 380608FDD0088AF0762E1B5F3E42BF5A /* Build configuration list for PBXNativeTarget "Pods-TouchPresenter_Example" */;
+			buildConfigurationList = 7B63F9815F21473A702D4EE59C778B59 /* Build configuration list for PBXNativeTarget "Pods-TouchPresenter_Example" */;
 			buildPhases = (
-				14F311F6564B70E5A9E768745F1C2694 /* Sources */,
-				A4A06F4D5D00B932399FE0C586151CCE /* Frameworks */,
-				F147F036C74960AE4146DB5EA600B1EC /* Headers */,
+				BCB943B04E31E2427D0A052DF43D4E40 /* Sources */,
+				FE13AACFF2DD3500F046938D8B27BE95 /* Frameworks */,
+				9181D4E89C1E56F8947ADB052F7F00EB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				966AB4022124B5A6289E74B9566A8CD4 /* PBXTargetDependency */,
+				65B91D691B1EA30A790A73C5FF2F4AEB /* PBXTargetDependency */,
 			);
 			name = "Pods-TouchPresenter_Example";
 			productName = "Pods-TouchPresenter_Example";
 			productReference = 0925DC9E4E001C412CD6F8104385DC4E /* Pods_TouchPresenter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6CDAB23B82BC0D9943E6B79D58535278 /* TouchPresenter */ = {
+		DADC98F6D23AA9D57487B025C14128C0 /* TouchPresenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F75A08E75D1FFAD80FDAF4244B6CE1B5 /* Build configuration list for PBXNativeTarget "TouchPresenter" */;
+			buildConfigurationList = E4F3DD3AD7DD8C1A4C4EABEF2D3EC9B9 /* Build configuration list for PBXNativeTarget "TouchPresenter" */;
 			buildPhases = (
-				CC968EF2AD0ABBF1AD0B8C6F80505BFD /* Sources */,
-				E9FEBAAC85326BF4D728E22E9968D04D /* Frameworks */,
-				69945E989B6A8757AB5D4F4090A7D000 /* Headers */,
+				F961BFBE1ED16D65931506BFF8C3CC9B /* Sources */,
+				9E8C8BF8B88099579ABD89ABD22CDEA2 /* Frameworks */,
+				B42E4B4729A16A76679D03EA43ACDF89 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -244,6 +244,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					16D1852A2AE05D65C135A6F845051CA0 = {
+						LastSwiftMigration = 0810;
+					};
+					DADC98F6D23AA9D57487B025C14128C0 = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,44 +265,145 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E846C615B0EAC971732559C3A93F518 /* Pods-TouchPresenter_Example */,
-				6CDAB23B82BC0D9943E6B79D58535278 /* TouchPresenter */,
+				16D1852A2AE05D65C135A6F845051CA0 /* Pods-TouchPresenter_Example */,
+				DADC98F6D23AA9D57487B025C14128C0 /* TouchPresenter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14F311F6564B70E5A9E768745F1C2694 /* Sources */ = {
+		BCB943B04E31E2427D0A052DF43D4E40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567154C516B6AD2F4479D840DDBF9339 /* Pods-TouchPresenter_Example-dummy.m in Sources */,
+				C1582BA5B2286355DA08B7AD2A7B0589 /* Pods-TouchPresenter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC968EF2AD0ABBF1AD0B8C6F80505BFD /* Sources */ = {
+		F961BFBE1ED16D65931506BFF8C3CC9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6D9EC401D2F302A9B53838B268E97F9 /* TouchPresenter-dummy.m in Sources */,
-				82E6DA66A7E01B217201441E8E42B78E /* TPIndicator.swift in Sources */,
-				7A9EF95F2018AEE605D1A6EE6CDB8B86 /* TPWindow.swift in Sources */,
+				3C078A82E33D0A6EE9D94017C44BB730 /* TouchPresenter-dummy.m in Sources */,
+				93B1DCC21C9026B9010B57E55596A44B /* TPIndicator.swift in Sources */,
+				AF933A2327170D4C33CBC9D04E72E04F /* TPWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		966AB4022124B5A6289E74B9566A8CD4 /* PBXTargetDependency */ = {
+		65B91D691B1EA30A790A73C5FF2F4AEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TouchPresenter;
-			target = 6CDAB23B82BC0D9943E6B79D58535278 /* TouchPresenter */;
-			targetProxy = 7C6AD052D14A0ECB3BA973A79B8F5FFC /* PBXContainerItemProxy */;
+			target = DADC98F6D23AA9D57487B025C14128C0 /* TouchPresenter */;
+			targetProxy = 1334D615E07B26A602B7BE0E6CCBEE97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+		0C810B83D75F0C6BA3319DFF24AD00B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD22F9096CEF9E248A42C2A88935CD2 /* TouchPresenter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TouchPresenter/TouchPresenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TouchPresenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TouchPresenter/TouchPresenter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TouchPresenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DE0C56CBA70517F204631AD4A06803D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD22F9096CEF9E248A42C2A88935CD2 /* TouchPresenter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TouchPresenter/TouchPresenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TouchPresenter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TouchPresenter/TouchPresenter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TouchPresenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50CC2E56F81A2AFAC368C75744F4E5EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4C08C77BDE43BE7D1CD26D23B4FE7F /* Pods-TouchPresenter_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TouchPresenter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TouchPresenter_Example/Pods-TouchPresenter_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TouchPresenter_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,6 +421,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -331,75 +441,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		98017E46CF1D7B9E15C752F375B383D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC4C08C77BDE43BE7D1CD26D23B4FE7F /* Pods-TouchPresenter_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TouchPresenter_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TouchPresenter_Example/Pods-TouchPresenter_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TouchPresenter_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A7FF0615339ED716959442A4276F6556 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AD22F9096CEF9E248A42C2A88935CD2 /* TouchPresenter.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TouchPresenter/TouchPresenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TouchPresenter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TouchPresenter/TouchPresenter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TouchPresenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,6 +465,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -431,17 +480,20 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DB3E3EABB2477CFB0FA365086AEE603B /* Debug */ = {
+		E947965AD797FAD9B44E2A3242067546 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B8D86F1CF5651006FE758EB4894D647 /* Pods-TouchPresenter_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -465,40 +517,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		EB187972EC663A78EF980D22914295DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AD22F9096CEF9E248A42C2A88935CD2 /* TouchPresenter.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TouchPresenter/TouchPresenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TouchPresenter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TouchPresenter/TouchPresenter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TouchPresenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -506,26 +530,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				034014829C1E4434983CF3A690C12017 /* Debug */,
-				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		380608FDD0088AF0762E1B5F3E42BF5A /* Build configuration list for PBXNativeTarget "Pods-TouchPresenter_Example" */ = {
+		7B63F9815F21473A702D4EE59C778B59 /* Build configuration list for PBXNativeTarget "Pods-TouchPresenter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB3E3EABB2477CFB0FA365086AEE603B /* Debug */,
-				98017E46CF1D7B9E15C752F375B383D5 /* Release */,
+				E947965AD797FAD9B44E2A3242067546 /* Debug */,
+				50CC2E56F81A2AFAC368C75744F4E5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F75A08E75D1FFAD80FDAF4244B6CE1B5 /* Build configuration list for PBXNativeTarget "TouchPresenter" */ = {
+		E4F3DD3AD7DD8C1A4C4EABEF2D3EC9B9 /* Build configuration list for PBXNativeTarget "TouchPresenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7FF0615339ED716959442A4276F6556 /* Debug */,
-				EB187972EC663A78EF980D22914295DD /* Release */,
+				0C810B83D75F0C6BA3319DFF24AD00B3 /* Debug */,
+				1DE0C56CBA70517F204631AD4A06803D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -18,12 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let config = TouchPresenterConfiguration(viewType: UIImageView.self, enable3DTouch: true) {
             $0.image = UIImage(named: "oval")
         }
-        window = TPWindow(frame: UIScreen.mainScreen().bounds, configuration: config)
+        window = TPWindow(frame: UIScreen.main.bounds, configuration: config)
         super.init()
-    }
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        return true
     }
 
 }

@@ -31,9 +31,9 @@ public struct TouchPresenterConfiguration<ViewType: UIView> {
     /// true if 3d touch should be visualized
     let threeDeeTouchEnabled: Bool
     
-    public typealias ViewConfiguration = (view: ViewType) -> Void
+    public typealias ViewConfiguration = (_ view: ViewType) -> Void
     
-    private(set) var viewConfiguration: ViewConfiguration?
+    fileprivate(set) var viewConfiguration: ViewConfiguration?
 
     /**
      Initialize a configuration instance.
@@ -78,9 +78,9 @@ public struct TouchPresenterConfiguration<ViewType: UIView> {
 
  You can set any subclass of UIView as the viewType. The window will then initialize an instance of it in the given size.
  */
-public class TPWindow<ViewType: UIView>: UIWindow {
+open class TPWindow<ViewType: UIView>: UIWindow {
 
-    private let configuration: TouchPresenterConfiguration<ViewType>
+    fileprivate let configuration: TouchPresenterConfiguration<ViewType>
 
     /**
      Initializes an instance of the window. See class documentation for more details.
@@ -90,30 +90,34 @@ public class TPWindow<ViewType: UIView>: UIWindow {
         super.init(frame: frame)
     }
 
-    public override func sendEvent(event: UIEvent) {
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    open override func sendEvent(_ event: UIEvent) {
         super.sendEvent(event)
 
-        event.allTouches()?.forEach {
+        event.allTouches?.forEach {
             touch in
 
             switch touch.phase {
 
-            case .Began:
-                let touchPosition = touch.locationInView(self)
+            case .began:
+                let touchPosition = touch.location(in: self)
                 let origin = CGPoint(x: touchPosition.x - configuration.size.width/2, y: touchPosition.y - configuration.size.height/2)
                 let frame = CGRect(origin: origin, size: configuration.size)
                 let indicator = ViewType(frame: frame)
-                configuration.viewConfiguration?(view: indicator)
+                configuration.viewConfiguration?(indicator)
                 touch.indicator = indicator
                 addSubview(indicator)
 
-            case .Stationary:
+            case .stationary:
                 break
 
-            case .Moved:
-                touch.indicator?.center = touch.locationInView(self)
+            case .moved:
+                touch.indicator?.center = touch.location(in: self)
 
-            case .Ended, .Cancelled:
+            case .ended, .cancelled:
                 touch.indicator?.removeFromSuperview()
                 touch.indicator = nil
             }
@@ -122,7 +126,7 @@ public class TPWindow<ViewType: UIView>: UIWindow {
                 if #available(iOS 9.0, *) {
 
                     let calculatedForce = max(1, sqrt(touch.force))
-                    touch.indicator?.transform = CGAffineTransformMakeScale(calculatedForce, calculatedForce)
+                    touch.indicator?.transform = CGAffineTransform(scaleX: calculatedForce, y: calculatedForce)
                 }
             }
 

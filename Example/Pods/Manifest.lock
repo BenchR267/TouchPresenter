@@ -1,5 +1,5 @@
 PODS:
-  - TouchPresenter (2.0.0)
+  - TouchPresenter (2.1.0)
 
 DEPENDENCIES:
   - TouchPresenter (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TouchPresenter: e99356545e0412f604f2159f3603399289af2c6d
+  TouchPresenter: 2af3a858bba89a3c82b8572fa4ee1d026768c538
 
 PODFILE CHECKSUM: 69303b18a11f9ca799b0c417739941a3766fe589
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

@@ -9,12 +9,12 @@
 import UIKit
 
 /// Provides a standard indicator which is just a red dot
-public class TPRedIndicator: UIView {
+open class TPRedIndicator: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .redColor()
+        backgroundColor = .red
         
         let size = min(frame.size.width, frame.size.height)
         layer.cornerRadius = size / 2
@@ -26,18 +26,18 @@ public class TPRedIndicator: UIView {
 }
 
 /// Provides a circle as standard indicator
-public class TPCircleIndicator: UIView {
+open class TPCircleIndicator: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .clearColor()
+        backgroundColor = .clear
         
         let size = min(frame.size.width, frame.size.height)
         layer.cornerRadius = size / 2
         
         layer.borderWidth = 3
-        layer.borderColor = UIColor.darkGrayColor().CGColor
+        layer.borderColor = UIColor.darkGray.cgColor
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -45,7 +45,7 @@ public class TPCircleIndicator: UIView {
     }
 }
 
-public class TPLightBlueCircleIndicator: UIView {
+open class TPLightBlueCircleIndicator: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor(red: 0, green: 151.0/255, blue: 216.0/255, alpha: 0.3)
