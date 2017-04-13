@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CDAB23B82BC0D9943E6B79D58535278"
+               BlueprintIdentifier = "DADC98F6D23AA9D57487B025C14128C0"
                BuildableName = "TouchPresenter.framework"
                BlueprintName = "TouchPresenter"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CDAB23B82BC0D9943E6B79D58535278"
+            BlueprintIdentifier = "DADC98F6D23AA9D57487B025C14128C0"
             BuildableName = "TouchPresenter.framework"
             BlueprintName = "TouchPresenter"
             ReferencedContainer = "container:Pods.xcodeproj">
