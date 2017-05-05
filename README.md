@@ -14,11 +14,7 @@ The idea of this project is heavily inspired by https://github.com/eumlab/EUMTou
 ## Example
 
 To run the example project, clone the repo and open the workspace in the Example directory.
-
-<center>
-![](pic/1.gif)
-![](pic/2.gif)
-</center>
+![](https://github.com/BenchR267/TouchPresenter/blob/master/pic/1.gif) ![](https://github.com/BenchR267/TouchPresenter/blob/master/pic/2.gif)
 
 ## Requirements
 
