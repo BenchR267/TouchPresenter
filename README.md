@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/BenchR267/TouchPresenter.svg?branch=master)](https://travis-ci.org/BenchR267/TouchPresenter)
 [![Swift Version](https://img.shields.io/badge/Swift-3.1-orange.svg)]()
+[![Swift Version](https://img.shields.io/badge/Swift-3.2-orange.svg)]()
+[![Swift Version](https://img.shields.io/badge/Swift-4.0-orange.svg)]()
 [![Version](https://img.shields.io/cocoapods/v/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 [![License](https://img.shields.io/cocoapods/l/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
 [![Platform](https://img.shields.io/cocoapods/p/TouchPresenter.svg?style=flat)](http://cocoapods.org/pods/TouchPresenter)
