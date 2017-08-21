@@ -1,9 +1,5 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode9
 script:
 - SCAN_WORKSPACE=./Example/TouchPresenter.xcworkspace SCAN_SCHEME=TouchPresenter-Example fastlane scan
 - pod lib lint
